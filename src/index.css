@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@base {
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+}
+
+@layer components {
+  .rectangle-clip {
+    clip-path: polygon(0% 0%, 30% 0%, 100% 100%, 0% 100%);
+  }
+
+  .animate-left {
+    animation: moveLeft 1s ease-in;
+  }
+  .animate-right {
+    animation: moveRight 1s ease-in;
+  }
+  .bg-image {
+    /* background-image: linear-gradient(
+        to right,
+        hsla(0, 0%, 0%, 0.58),
+        hsla(0, 0%, 0%, 0.58)
+      ),
+      url("/bg-img.jpg"); */
+    background-image: url("/bg-img.jpg");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: 40%;
+  }
+  @keyframes moveLeft {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    80% {
+      transform: translateX(20px);
+      opacity: 0.8;
+    }
+    100% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes moveRight {
+    0% {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    80% {
+      transform: translateX(-20px);
+      opacity: 0.8;
+    }
+    100% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+}
+.active .nav {
+  @apply border-b-2 border-primary py-4 text-primary;
+}
+.nav:hover {
+  @apply text-primary;
+}
+
+.active .btn {
+  @apply bg-primary text-secondary;
+}
+.btn:hover {
+  @apply bg-primary text-secondary;
+}
