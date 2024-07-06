@@ -111,7 +111,7 @@
     background-size: cover;
   }
   .p-info {
-    @apply flex min-h-28 flex-col items-start justify-center space-y-4 rounded-2xl bg-secondaryLighter p-5;
+    @apply flex h-24 flex-col items-start justify-center space-y-2 rounded-2xl bg-secondaryLighter p-5  text-xs 2xl:min-h-28 2xl:space-y-4;
   }
   @keyframes moveLeft {
     0% {

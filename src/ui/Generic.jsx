@@ -4,7 +4,7 @@ function Generic() {
   return (
     <div
       id="about"
-      className="col-span-2 flex h-screen w-full justify-center bg-secondary"
+      className="flex h-screen w-full bg-secondaryLight 2xl:col-span-2 2xl:justify-center 2xl:bg-secondary"
     >
       <Outlet />
     </div>

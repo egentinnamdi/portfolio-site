@@ -1,10 +1,7 @@
 import { animated, useSpring } from "@react-spring/web";
 
 function Project({ img, textOne, textTwo }) {
-  const spring = useSpring({
-    from: { x: 0 },
-    to: { x: 100 },
-  });
+
   return (
     <animated.div className={`space-y-8 `}>
       <div className="flex">

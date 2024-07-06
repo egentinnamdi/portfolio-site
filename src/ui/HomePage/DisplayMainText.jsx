@@ -23,7 +23,7 @@ function DisplayMainText() {
   );
 
   return (
-    <div className="flex flex-col items-end justify-center  space-y-5  pb-20 font-bold uppercase text-white lg:leading-[80px] 2xl:text-6xl">
+    <div className="flex flex-col items-center justify-center space-y-2 py-5 text-xl font-bold  uppercase text-white lg:leading-[80px] 2xl:items-end 2xl:space-y-5 2xl:pb-20 2xl:text-6xl">
       <span className=" tracking-wider   transition-all duration-75 ease-in">
         {text}
       </span>
