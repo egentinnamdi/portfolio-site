@@ -3,6 +3,7 @@ import BgImage from "../ui/HomePage/BgImage";
 import Intro from "../ui/HomePage/Intro";
 import Navbar from "../ui/Navbar";
 import PortContainer from "../ui/Portfolio/PortContainer";
+import Contact from "@/Contact/Contact";
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
       <Intro />
       <Generic />
       <PortContainer />
+      <Contact />
     </div>
   );
 }

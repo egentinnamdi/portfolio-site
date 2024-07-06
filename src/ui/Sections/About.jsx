@@ -1,6 +1,8 @@
 function About() {
   return (
-    <div className="grid h-4/5  w-3/4 grid-cols-2 grid-rows-1 bg-secondaryLight p-10 text-white">
+    <div
+      className="grid h-4/5  w-3/4 grid-cols-2 grid-rows-1 bg-secondaryLight p-10 text-white"
+    >
       <div className="grid h-5/6 w-5/6 place-items-center">
         <img
           src="/displaypic.jpg"

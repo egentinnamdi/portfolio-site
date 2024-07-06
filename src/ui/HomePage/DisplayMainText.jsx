@@ -24,10 +24,10 @@ function DisplayMainText() {
 
   return (
     <div className="flex flex-col items-end justify-center  space-y-5  pb-20 font-bold uppercase text-white lg:leading-[80px] 2xl:text-6xl">
-      <span className=" tracking-wider  text-primary transition-all duration-75 ease-in">
+      <span className=" tracking-wider   transition-all duration-75 ease-in">
         {text}
       </span>
-      <span className="animate-left  ">{textTwo}</span>
+      <span className="animate-left text-primary ">{textTwo}</span>
     </div>
   );
 }

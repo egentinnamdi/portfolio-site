@@ -3,23 +3,23 @@ import { NavLink } from "react-router-dom";
 function Navbar({ color }) {
   return (
     <div
-      className={` col-start-2 col-end-3  flex items-center justify-around pt-10  text-2xl font-bold capitalize text-${color}`}
+      className={` col-start-2 col-end-3  flex items-center justify-around pt-10  text-2xl font-bold capitalize text-${color} w-full`}
     >
       <NavLink to="/home">
         <span className="nav">home</span>
       </NavLink>
-      <NavLink to="/about">
+      <a href="#about">
         <span className="nav">about</span>
-      </NavLink>
-      <NavLink to="/portfolio">
+      </a>
+      <a href="#portfolio">
         <span className="nav">portfolio</span>
-      </NavLink>
-      <NavLink to="/contact">
+      </a>
+      <a href="#contact">
         <span className="nav">contact</span>
-      </NavLink>
-      <NavLink to="/blog">
+      </a>
+      <a href="#blog">
         <span className="nav">blog</span>
-      </NavLink>
+      </a>
     </div>
   );
 }

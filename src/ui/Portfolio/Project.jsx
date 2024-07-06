@@ -1,18 +1,24 @@
+import { animated, useSpring } from "@react-spring/web";
+
 function Project({ img, textOne, textTwo }) {
+  const spring = useSpring({
+    from: { x: 0 },
+    to: { x: 100 },
+  });
   return (
-    <div className="h-3/5 space-y-8">
-      <div className="h-5/6  ">
+    <animated.div className={`space-y-8 `}>
+      <div className="flex">
         <img
           src={`/${img}.jpg`}
-          className="h-full w-full rounded-2xl object-cover"
+          className="h-96 w-96 flex-grow rounded-2xl object-cover"
           alt={`${img}`}
         />
       </div>
-      <div className="flex flex-col space-y-4 pl-2">
+      <div className="flex flex-col items-center space-y-4 ">
         <span className="text-2xl uppercase text-primary">{textOne}</span>
         <span className="text-3xl  font-semibold capitalize">{textTwo}</span>
       </div>
-    </div>
+    </animated.div>
   );
 }
 
