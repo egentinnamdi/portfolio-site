@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
+/* @layer base {
   :root {
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
@@ -83,7 +83,7 @@
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     width: 100%;
   }
-}
+} */
 
 @layer components {
   .rectangle-clip {
@@ -97,12 +97,12 @@
     animation: moveRight 1s ease-in;
   }
   .bg-image {
-    /* background-image: linear-gradient(
+    background-image: linear-gradient(
         to right,
         hsla(0, 0%, 0%, 0.58),
         hsla(0, 0%, 0%, 0.58)
       ),
-      url("/bg-img.jpg"); */
+      url("/bg-img.jpg");
     background-image: url("/bg-img.jpg");
     background-position: center;
     background-size: 100%;
@@ -111,7 +111,7 @@
     background-size: cover;
   }
   .p-info {
-    @apply flex h-24 flex-col items-start justify-center space-y-2 rounded-2xl bg-secondaryLighter p-5  text-xs 2xl:min-h-28 2xl:space-y-4;
+    @apply bg-secondaryLighter flex h-24 flex-col items-start justify-center space-y-2 rounded-2xl p-5 text-xs 2xl:min-h-28 2xl:space-y-4;
   }
   @keyframes moveLeft {
     0% {
@@ -142,8 +142,11 @@
     }
   }
 }
+.nav {
+  @apply 2xl:text-2xl;
+}
 .active .nav {
-  @apply border-b-2 border-primary py-4 text-primary;
+  @apply border-primary text-primary border-b-2 py-4;
 }
 .nav:hover {
   @apply text-primary;
@@ -154,4 +157,7 @@
 }
 .btn:hover {
   @apply bg-primary text-secondary;
+}
+.img-radius {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 }

@@ -1,11 +1,4 @@
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-import Project from "./Project";
+
 
 // import Project from "./Project";
 
@@ -21,21 +14,7 @@ function PortContainer() {
       </div>
       <div className=" min-h-[32rem] w-1/4  ">
         {/* <Link to="https://weadex.netlify.app/weadex"> */}
-        <Carousel>
-          <CarouselContent>
-            <CarouselItem className=" h-full">
-              <Project img="weather" textOne="weather app" textTwo="weadex" />
-            </CarouselItem>
-            <CarouselItem>
-              <Project img="travel" textOne="travel app" textTwo="worldwise" />
-            </CarouselItem>
-            <CarouselItem>
-              <Project img="e-commerce" textOne="e-commerce" textTwo="bunqle" />
-            </CarouselItem>
-          </CarouselContent>
-          <CarouselPrevious className="bg-secondaryLight" />
-          <CarouselNext className="bg-secondaryLight" />
-        </Carousel>
+ 
       </div>
     </div>
   );
