@@ -12,7 +12,8 @@ function App() {
       <Routes>
         <Route path="/" index element={<Navigate to="home" />} />
         <Route path="/home" element={<Home />}>
-          <Route path="about" index element={<About />} />
+          <Route path="/" index element={<Navigate to="about" />} />
+          <Route path="about" element={<About />} />
           <Route path="education" element={<Education />} />
           <Route path="experience" element={<Experience />} />
           <Route path="skills" element={<Skills />} />
